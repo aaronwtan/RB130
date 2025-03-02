@@ -245,14 +245,14 @@ end
 # [X] Clean room
 # [ ] Go to gym
 
-todo1 = Todo.new("Buy milk")
-todo2 = Todo.new("Clean room")
-todo3 = Todo.new("Go to gym")
+# todo1 = Todo.new("Buy milk")
+# todo2 = Todo.new("Clean room")
+# todo3 = Todo.new("Go to gym")
 
-list = TodoList.new("Today's Todos")
-list.add(todo1)
-list.add(todo2)
-list.add(todo3)
+# list = TodoList.new("Today's Todos")
+# list.add(todo1)
+# list.add(todo2)
+# list.add(todo3)
 
 # list.each do |todo|
 #   puts todo                   # calls Todo#to_s
@@ -264,15 +264,15 @@ list.add(todo3)
 
 # puts results.inspect
 
-puts list.find_by_title('Clean room')
+# puts list.find_by_title('Clean room')
 
-list.mark_done('Buy milk')
-list.mark_done('Go to gym')
-puts list.all_done
-puts list.all_not_done
+# list.mark_done('Buy milk')
+# list.mark_done('Go to gym')
+# puts list.all_done
+# puts list.all_not_done
 
-list.mark_all_done
-puts list
+# list.mark_all_done
+# puts list
 
-list.mark_all_undone
-puts list
+# list.mark_all_undone
+# puts list
