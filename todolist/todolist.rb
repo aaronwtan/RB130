@@ -47,6 +47,8 @@ end
 # on a TodoList object, including iteration and selection.
 
 class TodoList
+  attr_reader :title
+
   def initialize(title)
     @title = title
     @todos = []
@@ -150,8 +152,8 @@ class TodoList
 
   private
 
-  attr_accessor :title
   attr_reader :todos
+  attr_writer :title
 
   def validate_todo(todo)
     raise TypeError, 'Can only add Todo object' unless todo.instance_of?(Todo)
