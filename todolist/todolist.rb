@@ -41,7 +41,6 @@ class Todo
   attr_accessor :description, :done
 end
 
-
 # This class represents a collection of Todo objects.
 # You can perform typical collection-oriented actions
 # on a TodoList object, including iteration and selection.
@@ -159,7 +158,6 @@ class TodoList
     raise TypeError, 'Can only add Todo object' unless todo.instance_of?(Todo)
   end
 end
-
 
 # given
 # todo1 = Todo.new("Buy milk")

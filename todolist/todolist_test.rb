@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/ClassLength, Naming/VariableNumber
 require 'simplecov'
 SimpleCov.start
 require 'minitest/autorun'
@@ -230,3 +231,5 @@ class TodoListTest < Minitest::Test
     assert_equal(false, @todo3.done?)
   end
 end
+
+# rubocop:enable Metrics/ClassLength, Naming/VariableNumber
